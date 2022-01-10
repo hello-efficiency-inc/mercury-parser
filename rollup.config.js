@@ -12,11 +12,20 @@ export default {
     }),
   ],
   treeshake: true,
-  output: {
-    file: process.env.MERCURY_TEST_BUILD
-      ? 'dist/mercury_test.js'
-      : 'dist/mercury.js',
-    format: 'cjs',
-    sourceMap: true,
-  },
+  output: [
+    {
+      file: process.env.MERCURY_TEST_BUILD
+        ? 'dist/mercury_test.esm.js'
+        : 'dist/mercury.esm.js',
+      format: 'esm',
+      sourceMap: true,
+    },
+    {
+      file: process.env.MERCURY_TEST_BUILD
+        ? 'dist/mercury_test.js'
+        : 'dist/mercury.js',
+      format: 'cjs',
+      sourceMap: true,
+    },
+  ],
 };

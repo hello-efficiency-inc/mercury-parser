@@ -1,42 +1,38 @@
-'use strict';
-
-function _interopDefault (ex) { return (ex && (typeof ex === 'object') && 'default' in ex) ? ex['default'] : ex; }
-
-var _Object$keys = _interopDefault(require('@babel/runtime-corejs2/core-js/object/keys'));
-var _Object$getOwnPropertySymbols = _interopDefault(require('@babel/runtime-corejs2/core-js/object/get-own-property-symbols'));
-var _Object$getOwnPropertyDescriptor = _interopDefault(require('@babel/runtime-corejs2/core-js/object/get-own-property-descriptor'));
-var _Object$getOwnPropertyDescriptors = _interopDefault(require('@babel/runtime-corejs2/core-js/object/get-own-property-descriptors'));
-var _Object$defineProperties = _interopDefault(require('@babel/runtime-corejs2/core-js/object/define-properties'));
-var _Object$defineProperty = _interopDefault(require('@babel/runtime-corejs2/core-js/object/define-property'));
-var _defineProperty = _interopDefault(require('@babel/runtime-corejs2/helpers/defineProperty'));
-var _objectWithoutProperties = _interopDefault(require('@babel/runtime-corejs2/helpers/objectWithoutProperties'));
-var _asyncToGenerator = _interopDefault(require('@babel/runtime-corejs2/helpers/asyncToGenerator'));
-var _regeneratorRuntime = _interopDefault(require('@babel/runtime-corejs2/regenerator'));
-var URL = _interopDefault(require('url'));
-var cheerio = _interopDefault(require('cheerio'));
-var TurndownService = _interopDefault(require('turndown'));
-var iconv = _interopDefault(require('iconv-lite'));
-var _parseInt = _interopDefault(require('@babel/runtime-corejs2/core-js/parse-int'));
-var _slicedToArray = _interopDefault(require('@babel/runtime-corejs2/helpers/slicedToArray'));
-var _Promise = _interopDefault(require('@babel/runtime-corejs2/core-js/promise'));
-var request = _interopDefault(require('postman-request'));
-var _Reflect$ownKeys = _interopDefault(require('@babel/runtime-corejs2/core-js/reflect/own-keys'));
-var _toConsumableArray = _interopDefault(require('@babel/runtime-corejs2/helpers/toConsumableArray'));
-var _parseFloat = _interopDefault(require('@babel/runtime-corejs2/core-js/parse-float'));
-var _Set = _interopDefault(require('@babel/runtime-corejs2/core-js/set'));
-var _Array$from = _interopDefault(require('@babel/runtime-corejs2/core-js/array/from'));
-var _Symbol = _interopDefault(require('@babel/runtime-corejs2/core-js/symbol'));
-var _Symbol$iterator = _interopDefault(require('@babel/runtime-corejs2/core-js/symbol/iterator'));
-var _Array$isArray = _interopDefault(require('@babel/runtime-corejs2/core-js/array/is-array'));
-var _typeof = _interopDefault(require('@babel/runtime-corejs2/helpers/typeof'));
-var _Object$assign = _interopDefault(require('@babel/runtime-corejs2/core-js/object/assign'));
-var stringDirection = _interopDefault(require('string-direction'));
-var validUrl = _interopDefault(require('valid-url'));
-var moment = _interopDefault(require('moment-timezone'));
-var parseFormat = _interopDefault(require('moment-parseformat'));
-var wuzzy = _interopDefault(require('wuzzy'));
-var difflib = _interopDefault(require('difflib'));
-var ellipsize = _interopDefault(require('ellipsize'));
+import _Object$keys from '@babel/runtime-corejs2/core-js/object/keys';
+import _Object$getOwnPropertySymbols from '@babel/runtime-corejs2/core-js/object/get-own-property-symbols';
+import _Object$getOwnPropertyDescriptor from '@babel/runtime-corejs2/core-js/object/get-own-property-descriptor';
+import _Object$getOwnPropertyDescriptors from '@babel/runtime-corejs2/core-js/object/get-own-property-descriptors';
+import _Object$defineProperties from '@babel/runtime-corejs2/core-js/object/define-properties';
+import _Object$defineProperty from '@babel/runtime-corejs2/core-js/object/define-property';
+import _defineProperty from '@babel/runtime-corejs2/helpers/defineProperty';
+import _objectWithoutProperties from '@babel/runtime-corejs2/helpers/objectWithoutProperties';
+import _asyncToGenerator from '@babel/runtime-corejs2/helpers/asyncToGenerator';
+import _regeneratorRuntime from '@babel/runtime-corejs2/regenerator';
+import URL from 'url';
+import cheerio from 'cheerio';
+import TurndownService from 'turndown';
+import iconv from 'iconv-lite';
+import _parseInt from '@babel/runtime-corejs2/core-js/parse-int';
+import _slicedToArray from '@babel/runtime-corejs2/helpers/slicedToArray';
+import _Promise from '@babel/runtime-corejs2/core-js/promise';
+import request from 'postman-request';
+import _Reflect$ownKeys from '@babel/runtime-corejs2/core-js/reflect/own-keys';
+import _toConsumableArray from '@babel/runtime-corejs2/helpers/toConsumableArray';
+import _parseFloat from '@babel/runtime-corejs2/core-js/parse-float';
+import _Set from '@babel/runtime-corejs2/core-js/set';
+import _Array$from from '@babel/runtime-corejs2/core-js/array/from';
+import _Symbol from '@babel/runtime-corejs2/core-js/symbol';
+import _Symbol$iterator from '@babel/runtime-corejs2/core-js/symbol/iterator';
+import _Array$isArray from '@babel/runtime-corejs2/core-js/array/is-array';
+import _typeof from '@babel/runtime-corejs2/helpers/typeof';
+import _Object$assign from '@babel/runtime-corejs2/core-js/object/assign';
+import stringDirection from 'string-direction';
+import validUrl from 'valid-url';
+import moment from 'moment-timezone';
+import parseFormat from 'moment-parseformat';
+import wuzzy from 'wuzzy';
+import difflib from 'difflib';
+import ellipsize from 'ellipsize';
 
 var NORMALIZE_RE = /\s{2,}(?![^<>]*<\/(pre|code|textarea)>)/g;
 function normalizeSpaces(text) {
@@ -7796,4 +7792,4 @@ var Mercury = {
   }
 };
 
-module.exports = Mercury;
+export default Mercury;

@@ -32,6 +32,7 @@
     "lint": "eslint . --fix",
     "lint:ci": "remark . && eslint .",
     "lint-fix-quiet": "eslint --fix --quiet",
+    "build:esm": "rollup -c",
     "build": "yarn lint && rollup -c && yarn test:build",
     "build:ci": "rollup -c && yarn test:build",
     "build:web": "yarn lint && rollup -c rollup.config.web.js && yarn test:build:web",
